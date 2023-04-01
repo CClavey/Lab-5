@@ -23,12 +23,14 @@ $sql_check = "SELECT * FROM registration_tab WHERE courseID = '$courseID' AND st
 $result_check = $connect->query($sql_check);
 if ($result_check->num_rows > 0) {
   ?>
+<center>
   <table>
     <tr>
       <td><h2>You have already registered for this class!</h2></td>
       <td><a href="register.php" class="drp"><button name="return">Return</button></a></td>
     </tr>
   </table>
+</center>
   <?php
 } 
 else {
